@@ -8,7 +8,7 @@
 
 ### 📖 Getting Started
 - 🔭 I’m currently working on **graduating from the ALX Software Engineering Programme**
-- 🌱 I’m currently learning **CLoud Development at the Udacity/ALX-T Cloud Developer Programme**
+- 🌱 I’m currently learning **CLoud Development at the Udacity/ALX-T Cloud Developer Nanodegree**
 - 💬 Ask me about **C, Python & JavaScript**
 - ⚡ Fun fact: **I enjoy writing. You can read up my articles on my [blog](https://sage.hashnode.dev/).**
 
