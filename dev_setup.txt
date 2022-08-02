@@ -1,3 +1,6 @@
+#THIS SETUP WILL CONTINUALLY BE UPDATED#
+
+
 System Admin Setup
 ===================
 1) Check for the installation of Python, gcc and git ( <name> --version)
@@ -7,6 +10,7 @@ System Admin Setup
 5) Install unzip:  sudo apt install unzip
 6) Tools: sudo apt install curl wget
 6) ssh-keygen guide: https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04
+
 
 C Setup
 =======
@@ -44,7 +48,6 @@ Python Setup
 1) Install Pycodestyle - sudo apt install pycodestyle
 
 
-
 JavaScript Setup
 ================
 1) sudo apt install node
@@ -67,6 +70,7 @@ JavaScript Setup
 		ionic   -  npm i @ionic/cli
 	b) dev dependency
 		nodemon -  npm i nodemon -D
+
 
 MySQL Setup
 ============
@@ -126,7 +130,6 @@ NOTE:
 	aws iam list-users
 	# If you've multiple profiles set locally
 	aws iam list-users --profile <profile-name>
-
 
 NB: Updating specific variable configuration is done via the following syntax
 # Syntax
