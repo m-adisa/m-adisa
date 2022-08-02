@@ -1,0 +1,141 @@
+System Admin Setup
+===================
+1) Check for the installation of Python, gcc and git ( <name> --version)
+2) Install Emacs - sudo apt install emacs
+3) Install ShellCheck - sudo apt install shellcheck
+4) Install network tools: sudo apt install net-tools
+5) Install unzip:  sudo apt install unzip
+6) Tools: sudo apt install curl wget
+6) ssh-keygen guide: https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04
+
+C Setup
+=======
+1) Install Betty
+	a) Clone the repo to your local machine - git clone https://github.com/holbertonschool/Betty.git
+	b) cd into the Betty directory
+	c) Install the linter with sudo ./install.sh
+	d) emacs or vi a new file called betty, and copy the script below:
+		#!/bin/bash
+		# Simply a wrapper script to keep you from having to use betty-style
+		# and betty-doc separately on every item.
+		# Originally by Tim Britton (@wintermanc3r), multiargument added by
+		# Larry Madeo (@hillmonkey)
+
+		BIN_PATH="/usr/local/bin"
+		BETTY_STYLE="betty-style"
+		BETTY_DOC="betty-doc"
+
+		if [ "$#" = "0" ]; then
+		    echo "No arguments passed."
+		    exit 1
+		fi
+
+		for argument in "$@" ; do
+		    echo -e "\n========== $argument =========="
+		    ${BIN_PATH}/${BETTY_STYLE} "$argument"
+		    ${BIN_PATH}/${BETTY_DOC} "$argument"
+		done
+
+2) Setup emacs to use Betty Linter for C - https://sage.hashnode.dev/using-holbertons-betty-linter-for-c-on-emacs
+
+
+Python Setup
+=============
+1) Install Pycodestyle - sudo apt install pycodestyle
+
+
+
+JavaScript Setup
+================
+1) sudo apt install node
+2) sudo apt install npm
+3) use vi or emacs as text editor as usual
+4) package.json inside every main project directory
+	a) npm init (step by step, press enter to skip. OR
+	b) npm init -y (everything default)
+5) for npm
+	a) local dependency - npm i <packageName>  (inside every main project directory, after npm init)
+	b) global dependency - npm install -g <packageName>  (Using <sudo> command with npm is not recommended. Try not to use global dependency)
+	c) dev dependencies - npm i <packageName> -D  (install nodemon this way)
+6) create a .gitignore file inside every main project directory that contains </node_modules> to not push the node_modules folder
+7) clone John Smilga's repo in a separate directory ( git clone https://github.com/john-smilga/node-express-course.git )
+8) Dev resources
+	a) develper.mozilla.org (especially anything http related)
+9) Packages to install
+	a) local dependency
+		express -  npm install express --save
+		ionic   -  npm i @ionic/cli
+	b) dev dependency
+		nodemon -  npm i nodemon -D
+
+MySQL Setup
+============
+1) install mysql-server: sudo apt install mysql-server
+2) check that "mysql" service is active: systemctl is-active mysql   (should return "active")
+3) configure MySQL server:  sudo mysql_secure_installation
+4) login to the MySQL server:   sudo mysql
+5) install workbench:   sudo snap install mysql-workbench-community
+reference: https://linuxhint.com/installing_mysql_workbench_ubuntu/
+
+
+Docker Setup
+=============
+Docker Reference:
+a) https://docs.docker.com/get-started/
+b) https://docs.docker.com/
+
+Install Reference:
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
+https://linuxhint.com/install_configure_docker_ubuntu/#:~:text=In%20your%20Ubuntu%20terminal%2C%20utilize%20the%20%E2%80%9C%20docker,Docker%20containers%2C%20including%20the%20active%20and%20inactive%20ones%3A
+
+1) Install essential packages:   sudo apt install apt-transport-https ca-certificates curl software-properties-common
+2) Add the GPG key of the Docker repository (returns OK):  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+3) Add the Docker repository to Ubuntu system:  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu  focal  stable"
+4) Update system again: sudo apt update
+5) Ensure that we are going to install the application from the Docker repository:   apt-cache policy docker-ce
+6) Install docker: sudo apt install docker-ce
+7) Confirm install:  docker --version
+8) Check the status of the service:  sudo systemctl status docker
+  If not running, do the following:
+	Start docker:  sudo systemctl start docker
+	Enable docker: sudo systemctl enable docker
+9) Check the references (in order) for additional setup info
+
+
+Amazon Web Services
+====================
+Install AWS CLI tool
+1) curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+2) unzip awscliv2.zip
+3) sudo ./aws/install
+
+Configuration and setup
+1) setup:  aws configure
+NOTE:
+	a) prefered output format is json
+	b) default profile name is default
+	c) if you already have a default profile (an existing profile) setting up new profiles is done as: aws configure --profile <profile-name>
+2) confirm setup:
+	aws configure list 
+	aws configure list-profiles
+3) protect sensitive information
+	export AWS_CONFIG_FILE=~/.aws/config
+	export AWS_SHARED_CREDENTIALS_FILE=~/.aws/credentials
+4) Testing setup
+	# If you've just one profile set locally
+	aws iam list-users
+	# If you've multiple profiles set locally
+	aws iam list-users --profile <profile-name>
+
+
+NB: Updating specific variable configuration is done via the following syntax
+# Syntax
+# aws configure set <varname> <value> [--profile profile-name]
+# For example
+aws configure set default.region us-east-2
+
+
+Cloud Dev
+==========
+1) Install Postbird
+2) Install Postman
