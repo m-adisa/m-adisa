@@ -63,7 +63,7 @@ JavaScript Setup
 6) create a .gitignore file inside every main project directory that contains </node_modules> to not push the node_modules folder
 7) clone John Smilga's repo in a separate directory ( git clone https://github.com/john-smilga/node-express-course.git )
 8) Dev resources
-	a) develper.mozilla.org (especially anything http related)
+	a) developer.mozilla.org (especially anything http related)
 9) Packages to install
 	a) local dependency
 		express -  npm install express --save
@@ -140,5 +140,5 @@ aws configure set default.region us-east-2
 
 Cloud Dev
 ==========
-1) Install Postbird
-2) Install Postman
+1) Install Postbird - sudo snap install postbird
+2) Install Postman - sudo snap install postman
