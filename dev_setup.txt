@@ -50,7 +50,7 @@ Python Setup
 
 JavaScript Setup
 ================
-1) sudo apt install node
+1) sudo apt install nodejs
 2) sudo apt install npm
 3) use vi or emacs as text editor as usual
 4) package.json inside every main project directory
