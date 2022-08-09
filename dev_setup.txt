@@ -74,12 +74,9 @@ JavaScript Setup
 
 MySQL Setup
 ============
-1) install mysql-server: sudo apt install mysql-server
-2) check that "mysql" service is active: systemctl is-active mysql   (should return "active")
-3) configure MySQL server:  sudo mysql_secure_installation
-4) login to the MySQL server:   sudo mysql
-5) install workbench:   sudo snap install mysql-workbench-community
-reference: https://linuxhint.com/installing_mysql_workbench_ubuntu/
+FOLLOW Reference: https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04
+Install workbench:   sudo snap install mysql-workbench-community
+
 
 
 Docker Setup
