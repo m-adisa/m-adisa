@@ -74,7 +74,8 @@ JavaScript Setup
 
 MySQL Setup
 ============
-FOLLOW Reference: https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04
+FOLLOW Reference CAREFULLY and WITH CAUTION (the instructions are not properly arranged)
+Reference -   https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04
 Install workbench:   sudo snap install mysql-workbench-community
 
 
