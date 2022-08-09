@@ -78,6 +78,9 @@ FOLLOW Reference CAREFULLY and WITH CAUTION (the instructions are not properly a
 Reference -   https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04
 Install workbench:   sudo snap install mysql-workbench-community
 
+To uninstall mysql comletely refer -  https://askubuntu.com/questions/640899/how-do-i-uninstall-mysql-completely
+Again, READ ALL THE SOLUTIONS CAREFULLY BEFORE DOING ANYTHING
+
 
 
 Docker Setup
