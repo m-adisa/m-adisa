@@ -70,7 +70,8 @@ JavaScript Setup
 		ionic   -  npm i @ionic/cli
 	b) dev dependency
 		nodemon -  npm i nodemon -D
-		mocha -   npm install --save-dev mocha
+		mocha -   npm install mocha --save-dev
+		chai -    npm install chai --save-dev
 
 
 
