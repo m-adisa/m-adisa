@@ -70,16 +70,46 @@ JavaScript Setup
 		ionic   -  npm i @ionic/cli
 	b) dev dependency
 		nodemon -  npm i nodemon -D
+		mocha -   npm install --save-dev mocha
+
 
 
 MySQL Setup
 ============
-FOLLOW Reference CAREFULLY and WITH CAUTION (the instructions are not properly arranged)
+1) sudo apt update
+2) sudo apt install mysql-server
+3) sudo systemctl start mysql.service
+4) sudo mysql
+5) mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your_password';
+6) mysql> exit
+7) sudo mysql_secure_installation
+NB:
+==
+This will take you through a series of prompts where you can make some changes to your MySQL installation’s security options. The first prompt will ask whether you’d like to set up the Validate Password Plugin, which can be used to test the password strength of new MySQL users before deeming them valid. If you elect to set up the Validate Password Plugin, any MySQL user you create that authenticates with a password will be required to have a password that satisfies the policy you select.
+After selecting your password, From there, you can press Y and then ENTER to accept the defaults for all the subsequent questions. This will remove some anonymous users and the test database, disable remote root logins, and load these new rules so that MySQL immediately respects the changes you have made.
+
+8) mysql -u root -p
+9) mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH auth_socket;
+10) mysql> exit
+11) sudo mysql
+12) mysql> CREATE USER 'codart'@'localhost' IDENTIFIED BY 'whatever_password_you_want';
+13) mysql> GRANT ALL PRIVILEGES ON *.* TO 'codart'@'localhost';
+16) mysql> FLUSH PRIVILEGES;
+17) mysql> exit
+
+Test
+====
+Login-  mysql -u codart -p
+It will prompt you for your password.
+Then exit-  mysql> exit
+
+Check- sudo mysqladmin -p -u codart version
+
 Reference -   https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04
 Install workbench:   sudo snap install mysql-workbench-community
 
-To uninstall mysql comletely refer -  https://askubuntu.com/questions/640899/how-do-i-uninstall-mysql-completely
-Again, READ ALL THE SOLUTIONS CAREFULLY BEFORE DOING ANYTHING
+To uninstall mysql comletely, refer -  https://askubuntu.com/questions/640899/how-do-i-uninstall-mysql-completely
+Again, READ ALL THIS GUIDE AND THE REFERENCES CAREFULLY BEFORE DOING ANYTHING
 
 
 
