@@ -59,20 +59,24 @@ JavaScript Setup
 5) for npm
 	a) local dependency - npm i <packageName>  (inside every main project directory, after npm init)
 	b) global dependency - npm install -g <packageName>  (Using <sudo> command with npm is not recommended. Try not to use global dependency)
-	c) dev dependencies - npm i <packageName> -D  (install nodemon this way)
+	c) dev dependencies - npm install <packageName> --save-dev
 6) create a .gitignore file inside every main project directory that contains </node_modules> to not push the node_modules folder
-7) clone John Smilga's repo in a separate directory ( git clone https://github.com/john-smilga/node-express-course.git )
-8) Dev resources
+7) Dev resources
 	a) developer.mozilla.org (especially anything http related)
-9) Packages to install
+8) Packages to install
 	a) local dependency
 		express -  npm install express --save
 		ionic   -  npm i @ionic/cli
 	b) dev dependency
-		nodemon -  npm i nodemon -D
-		mocha -   npm install mocha --save-dev
-		chai -    npm install chai --save-dev
-
+		nodemon -  npm install nodemon --save-dev
+		mocha -    npm install mocha --save-dev
+		chai -     npm install chai --save-dev
+		typescript -   npm install typescript --save-dev
+			       npm install ts-node --save-dev
+			       npm install @types/node --save-dev
+			       
+			      
+learning resource: John Smilga's repo ( git clone https://github.com/john-smilga/node-express-course.git )
 
 
 MySQL Setup
