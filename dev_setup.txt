@@ -63,9 +63,10 @@ JavaScript Setup
 6) create a .gitignore file inside every main project directory that contains </node_modules> to not push the node_modules folder
 7) Packages to install
 	a) local dependency
-		express -  npm install express --save
-		ionic   -  npm i @ionic/cli
+		express -    npm install express --save
+		ionic   -    npm i @ionic/cli
 		sequelize -  npm i sequelize
+		AWS SDK -    npm install aws-sdk
 	b) dev dependency
 		nodemon -  npm install nodemon --save-dev
 		mocha -    npm install mocha --save-dev
