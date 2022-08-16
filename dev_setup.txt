@@ -67,6 +67,7 @@ JavaScript Setup
 	a) local dependency
 		express -  npm install express --save
 		ionic   -  npm i @ionic/cli
+		sequelize -  npm i sequelize
 	b) dev dependency
 		nodemon -  npm install nodemon --save-dev
 		mocha -    npm install mocha --save-dev
