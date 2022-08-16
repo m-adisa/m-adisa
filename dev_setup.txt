@@ -61,9 +61,7 @@ JavaScript Setup
 	b) global dependency - npm install -g <packageName>  (Using <sudo> command with npm is not recommended. Try not to use global dependency)
 	c) dev dependencies - npm install <packageName> --save-dev
 6) create a .gitignore file inside every main project directory that contains </node_modules> to not push the node_modules folder
-7) Dev resources
-	a) developer.mozilla.org (especially anything http related)
-8) Packages to install
+7) Packages to install
 	a) local dependency
 		express -  npm install express --save
 		ionic   -  npm i @ionic/cli
@@ -175,7 +173,13 @@ NB: Updating specific variable configuration is done via the following syntax
 aws configure set default.region us-east-2
 
 
-Cloud Dev
-==========
+Other Resources
+================
 1) Install Postbird - sudo snap install postbird
 2) Install Postman - sudo snap install postman
+
+
+Dev Resources
+=============
+a) https://developer.mozilla.org/en-US/
+b) https://www.digitalocean.com/community/tutorials
