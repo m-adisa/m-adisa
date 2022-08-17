@@ -14,7 +14,8 @@ System Admin Setup
 
 C Setup
 =======
-1) Install Betty
+1) Install basic setup -   sudo apt install build-essential
+2) Install Betty
 	a) Clone the repo to your local machine - git clone https://github.com/holbertonschool/Betty.git
 	b) cd into the Betty directory
 	c) Install the linter with sudo ./install.sh
@@ -40,7 +41,7 @@ C Setup
 		    ${BIN_PATH}/${BETTY_DOC} "$argument"
 		done
 
-2) Setup emacs to use Betty Linter for C - https://sage.hashnode.dev/using-holbertons-betty-linter-for-c-on-emacs
+3) Setup emacs to use Betty Linter for C - https://sage.hashnode.dev/using-holbertons-betty-linter-for-c-on-emacs
 
 
 Python Setup
