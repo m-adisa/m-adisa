@@ -50,6 +50,7 @@ C Setup
 Python Setup
 =============
 1) Install Pycodestyle - sudo apt install pycodestyle
+2) Install pip -         sudo apt install pip
 
 
 JavaScript Setup
