@@ -50,14 +50,17 @@ C Setup
 Python Setup
 =============
 1) Install Python -	sudo apt install python  (this installs Python2)
-			sudo apt install python3 (this installs Python3)  
+			sudo apt install python3 (this installs Python3. This is the choice)  
 2) Install Pycodestyle - sudo apt install pycodestyle
 3) Install pip -         sudo apt install pip
 4) Install pipx -        sudo apt install pipx  (used for local installs into a project's root directory)
 5) Install venv  -       sudo apt install python3.8-venv  (according to your python version)
+6) Install virtualenv -  python3 -m pip install virtualenv
+			 cd ~/.local/bin
+			 sudo mv virtualenv /bin/   (moving virtualenv to path)
 
 
-JavaScript Setup
+JavaScript/TypeScript Setup
 ================
 1) sudo apt install nodejs
 2) sudo apt install npm
@@ -184,6 +187,11 @@ NB: Updating specific variable configuration is done via the following syntax
 aws configure set default.region us-east-2
 
 B -- INSTALL AWS EB CLI TOOL
+Ensure you have the following installed - git, python3 and virtualenv (instructions to get these were described)
+1) Clone the repo - git clone https://github.com/aws/aws-elastic-beanstalk-cli-setup.git
+2) Install/Upgrade - python3 ./aws-elastic-beanstalk-cli-setup/scripts/ebcli_installer.py
+3) Move to path  - sudo echo 'export PATH="~/.ebcli-virtual-env/executables:$PATH"' >> ~/.bash_profile && source ~/.bash_profile     (the prompt will give more direction on this final step)
+
 Reference - https://github.com/aws/aws-elastic-beanstalk-cli-setup
 
 # Installation for AWS SDK for JavaScript is referenced in the JavaScript/TypeScript section
