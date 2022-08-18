@@ -72,6 +72,7 @@ JavaScript Setup
 		ionic   -    npm i @ionic/cli
 		sequelize -  npm i sequelize
 		AWS SDK -    npm install aws-sdk
+		Dotenv -     npm install dotenv --save
 	b) dev dependency
 		nodemon -  npm install nodemon --save-dev
 		mocha -    npm install mocha --save-dev
