@@ -3,7 +3,7 @@
 
 System Admin Setup
 ===================
-1) Check for the installation of Python, gcc and git ( <name> --version)
+1) Install git -   sudo apt install git
 2) Install Emacs - sudo apt install emacs
 3) Install ShellCheck - sudo apt install shellcheck
 4) Install network tools: sudo apt install net-tools
@@ -49,8 +49,12 @@ C Setup
 
 Python Setup
 =============
-1) Install Pycodestyle - sudo apt install pycodestyle
-2) Install pip -         sudo apt install pip
+1) Install Python -	sudo apt install python  (this installs Python2)
+			sudo apt install python3 (this installs Python3)  
+2) Install Pycodestyle - sudo apt install pycodestyle
+3) Install pip -         sudo apt install pip
+4) Install pipx -        sudo apt install pipx  (used for local installs into a project's root directory)
+5) Install venv  -       sudo apt install python3.8-venv  (according to your python version)
 
 
 JavaScript Setup
@@ -150,7 +154,7 @@ https://linuxhint.com/install_configure_docker_ubuntu/#:~:text=In%20your%20Ubunt
 
 Amazon Web Services
 ====================
-Install AWS CLI tool
+A -- INSTALL AWS CLI TOOL
 1) curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 2) unzip awscliv2.zip
 3) sudo ./aws/install
@@ -178,6 +182,12 @@ NB: Updating specific variable configuration is done via the following syntax
 # aws configure set <varname> <value> [--profile profile-name]
 # For example
 aws configure set default.region us-east-2
+
+B -- INSTALL AWS EB CLI TOOL
+Reference - https://github.com/aws/aws-elastic-beanstalk-cli-setup
+
+# Installation for AWS SDK for JavaScript is referenced in the JavaScript/TypeScript section
+Reference - https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/installing-jssdk.html
 
 
 Other Resources
