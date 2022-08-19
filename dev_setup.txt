@@ -192,6 +192,9 @@ Ensure you have the following installed - git, python3 and virtualenv (instructi
 4) Use pip to get the EB CLI - pip install awsebcli --upgrade
 			       pip install awsebcli --upgrade --user
 5) Verify the install - eb --version
+6) Usage:
+	- eb init      (in project root directory to setup the eb configuration)
+	- eb create    ( when you're ready to deploy)
 
 Reference - https://github.com/aws/aws-elastic-beanstalk-cli-setup
 	    https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install-linux.html
