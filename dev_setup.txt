@@ -78,8 +78,10 @@ JavaScript/TypeScript Setup
 		sequelize -  npm i sequelize
 		AWS SDK -    npm install aws-sdk
 		Dotenv -     npm install dotenv --save
+		bcrypt -     npm install bcrypt
 	b) dev dependency
 		nodemon -  npm install nodemon --save-dev
+		bcrypt -   npm install @types/bcrypt --save-dev  **
 		mocha -    npm install mocha --save-dev
 		chai -     npm install chai --save-dev
 		typescript -   npm install typescript --save-dev
