@@ -209,8 +209,11 @@ Reference - https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/in
 
 Other Resources
 ================
-1) Install Postbird - sudo snap install postbird
-2) Install Postman - sudo snap install postman
+- Install Postbird :- sudo snap install postbird
+- Install Postman :- sudo snap install postman
+- Use Sentry for bug reporting :- https://sentry.io/
+- Use Siege for concurrency testing :- https://www.joedog.org/siege-manual/
+- Use Cloudflare and Datadog (AWS CloudWatch is an alternative)
 
 
 Dev Resources
