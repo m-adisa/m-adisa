@@ -141,7 +141,6 @@ b) https://docs.docker.com/
 
 Install Reference:
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
-https://linuxhint.com/install_configure_docker_ubuntu/#:~:text=In%20your%20Ubuntu%20terminal%2C%20utilize%20the%20%E2%80%9C%20docker,Docker%20containers%2C%20including%20the%20active%20and%20inactive%20ones%3A
 
 1) Install essential packages:   sudo apt install apt-transport-https ca-certificates curl software-properties-common
 2) Add the GPG key of the Docker repository (returns OK):  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
