@@ -119,11 +119,11 @@ After selecting your password, From there, you can press Y and then ENTER to acc
 
 Test
 ====
-Login-  mysql -u codart -p
+Login-  mysql -u <username> -p
 It will prompt you for your password.
 Then exit-  mysql> exit
 
-Check- sudo mysqladmin -p -u codart version
+Check- sudo mysqladmin -p -u <username> version
 
 Reference -   https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04
 Install workbench:   sudo snap install mysql-workbench-community
@@ -135,25 +135,10 @@ Again, READ ALL THIS GUIDE AND THE REFERENCES CAREFULLY BEFORE DOING ANYTHING
 
 Docker Setup
 =============
-Docker Reference:
-a) https://docs.docker.com/get-started/
-b) https://docs.docker.com/
-
 Install Reference:
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
-
-1) Install essential packages:   sudo apt install apt-transport-https ca-certificates curl software-properties-common
-2) Add the GPG key of the Docker repository (returns OK):  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-3) Add the Docker repository to Ubuntu system:  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu  focal  stable"
-4) Update system again: sudo apt update
-5) Ensure that we are going to install the application from the Docker repository:   apt-cache policy docker-ce
-6) Install docker: sudo apt install docker-ce
-7) Confirm install:  docker --version
-8) Check the status of the service:  sudo systemctl status docker
-  If not running, do the following:
-	Start docker:  sudo systemctl start docker
-	Enable docker: sudo systemctl enable docker
-9) Check the references (in order) for additional setup info
+https://docs.docker.com/desktop/install/ubuntu/
+NB: resolve the dependencies like "qemu-system-x86" and set up "pass"
 
 
 Amazon Web Services
