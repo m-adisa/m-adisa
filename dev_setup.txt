@@ -140,6 +140,16 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-o
 https://docs.docker.com/desktop/install/ubuntu/
 NB: resolve the dependencies like "qemu-system-x86" and set up "pass"
 
+Important Docker Commands
+- docker context list [use] (to see which docker system you are using)
+- docker ps {-a}     (to see all docker processes)
+- docker build -t <image_name> .  (build an image)
+- docker images   (to see your images)
+- docker login -u “myusername” -p “mypassword” docker.io  (optional, to login to dockerhub. There are alternative ways to do this too)
+- docker tag <image_name>:<image_tag> <dockerhub_username>/<dockerhub_repo_name>:<image_name>    (to tag an image to be pushed)
+- docker push <dockerhub_username>/<dockerhub_repo_name>:<image_name>     (to push docker image)
+(Google "docker login" for how to login to dockerhub from the cli and refer to
+
 
 Amazon Web Services
 ====================
