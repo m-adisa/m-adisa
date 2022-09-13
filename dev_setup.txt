@@ -139,6 +139,13 @@ To uninstall mysql comletely, refer -  https://askubuntu.com/questions/640899/ho
 Again, READ ALL THIS GUIDE AND THE REFERENCES CAREFULLY BEFORE DOING ANYTHING
 
 
+PostgreSQL SETUP
+=================
+1) sudo apt install postgresql-common
+2) sudo sh /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
+3) sudo apt install postgresql-14
+
+
 
 Docker Setup
 =============
