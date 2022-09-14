@@ -1,5 +1,5 @@
 #THIS SETUP WILL CONTINUALLY BE UPDATED#
-
+## BASIC ASSUMPTION: Operating System is Ubuntu 20.04 LTS
 
 System Admin Setup
 ===================
@@ -123,7 +123,6 @@ After selecting your password, From there, you can press Y and then ENTER to acc
 13) mysql> GRANT ALL PRIVILEGES ON *.* TO 'codart'@'localhost';
 16) mysql> FLUSH PRIVILEGES;
 17) mysql> exit
-
 Test
 ====
 Login-  mysql -u <username> -p
@@ -137,6 +136,7 @@ Install workbench:   sudo snap install mysql-workbench-community
 
 To uninstall mysql comletely, refer -  https://askubuntu.com/questions/640899/how-do-i-uninstall-mysql-completely
 Again, READ ALL THIS GUIDE AND THE REFERENCES CAREFULLY BEFORE DOING ANYTHING
+
 
 
 PostgreSQL SETUP
@@ -163,6 +163,18 @@ Important Docker Commands
 - docker tag <image_name>:<image_tag> <dockerhub_username>/<dockerhub_repo_name>:<image_name>    (to tag an image to be pushed)
 - docker push <dockerhub_username>/<dockerhub_repo_name>:<image_name>     (to push docker image)
 (Google "docker login" for how to login to dockerhub from the cli and refer to
+
+
+
+Minikube Setup
+===============
+Prerequisite: Fully functional Docker installation
+Installation:
+	- curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
+	- sudo dpkg -i minikube_latest_amd64.deb
+
+Reference: https://minikube.sigs.k8s.io/docs/start/
+
 
 
 Amazon Web Services
