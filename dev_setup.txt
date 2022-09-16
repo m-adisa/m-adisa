@@ -227,6 +227,20 @@ Reference - https://github.com/aws/aws-elastic-beanstalk-cli-setup
 Reference - https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/installing-jssdk.html
 
 
+Puppet Setup
+=============
+Install Pupppet:
+	- sudo apt-get install -y ruby
+	- sudo apt-get install -y ruby-augeas
+	- sudo apt-get install -y ruby-shadow
+	- sudo apt-get install -y puppet
+	
+Install puppet-lint: sudo gem install puppet-lint
+
+Emacs puppet-mode: M-x package-install RET puppet-mode
+
+
+
 Other Resources
 ================
 - Install Postbird :- sudo snap install postbird
