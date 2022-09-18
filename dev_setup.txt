@@ -8,8 +8,9 @@ System Admin Setup
 3) Install ShellCheck - sudo apt install shellcheck
 4) Install network tools: sudo apt install net-tools
 5) Install unzip:  sudo apt install unzip
-6) Tools: sudo apt install curl wget
-6) ssh-keygen guide: https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04
+6) Install OpenSSH Server:  sudo apt-get install openssh-server
+7) Tools: sudo apt install curl wget
+8) ssh-keygen guide: https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04
 
 
 C Setup
