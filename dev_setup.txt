@@ -208,6 +208,7 @@ NB: Updating specific variable configuration is done via the following syntax
 # aws configure set <varname> <value> [--profile profile-name]
 # For example
 aws configure set default.region us-east-2
+aws configure set default.aws_session_token "Your-value"
 
 B -- INSTALL AWS EB CLI TOOL
 Ensure you have the following installed - git, python3 and virtualenv (instructions to get these were described)
