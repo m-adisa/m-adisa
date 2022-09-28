@@ -84,11 +84,12 @@ JavaScript/TypeScript Setup
 6) Packages to install
 	a) local dependency
 		express -    npm install express --save
-		ionic   -    npm i @ionic/cli
-		sequelize -  npm i sequelize
+		ionic   -    npm install -g @ionic/cli
+		sequelize -  npm install sequelize
 		AWS SDK -    npm install aws-sdk
 		Dotenv -     npm install dotenv --save
 		bcrypt -     npm install bcrypt
+		serverless-  npm install -g serverless
 	b) dev dependency
 		nodemon -  npm install nodemon --save-dev
 		bcrypt -   npm install @types/bcrypt --save-dev  **
