@@ -12,6 +12,7 @@ System Admin Setup
 7) Install OpenSSH Server:  sudo apt-get install openssh-server
 8) Install Haproxy: https://haproxy.debian.net/
 9) Install Nginx:  sudo apt install nginx
+10) Install htop: sudo apt-get install htop -y
 
 Resource
 ssh-keygen guide: https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04
