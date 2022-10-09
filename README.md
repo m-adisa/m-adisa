@@ -7,9 +7,9 @@
 </p>
 
 ### 📖 Getting Started
-- 🔭 I’m currently working on **graduating from the ALX Software Engineering Programme**
-- 🌱 I’m currently working on **finishing up the Udacity/ALX-T Cloud Developer Nanodegree**
-- 💬 Ask me about **C, Python, TypeScript, System Administration and Microservices**
+- 🔭 I **[graduated from the Udacity/ALX-T Cloud Developer Nanodegree](https://confirm.udacity.com/KYKQRNHE)**
+- 🌱 I’m currently working on **finishing up the ALX Software Engineering Programme**
+- 💬 Ask me anything about **C, Python, TypeScript, NodeJS, System Administration and Microservices**
 - ⚡ Fun fact: **I enjoy writing. You can read up my articles on my [blog](https://sage.hashnode.dev/).**
 
 
