@@ -13,6 +13,7 @@ System Admin Setup
 8) Install Haproxy: https://haproxy.debian.net/
 9) Install Nginx:  sudo apt install nginx
 10) Install htop: sudo apt-get install htop -y
+11) Install inxi: sudo apt install inxi
 
 Resource
 ssh-keygen guide: https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04
