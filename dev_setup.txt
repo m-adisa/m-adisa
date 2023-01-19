@@ -69,6 +69,8 @@ Python Setup
 11) sudo apt-get install zlib1g-dev
 12) sudo pip3 install mysqlclient
 13) sudo pip3 install SQLAlchemy
+14) pip3 install redis
+15) pip3 install pymongo
 
 
 
@@ -153,6 +155,24 @@ PostgreSQL SETUP
 2) sudo sh /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
 3) sudo apt install postgresql-14
 
+
+Redis SETUP
+============
+1) sudo apt update
+2) sudo apt install redis-server
+3) sudo vim /etc/redis/redis.conf (supervised is set to `no` by default. Change it to `systemd`.
+4) sudo systemctl restart redis.service
+Reference: https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-20-04
+
+
+MongoDB SETUP
+==============
+1) curl -fsSL https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+2) echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
+3) sudo apt update
+4) sudo apt install mongodb-org
+5) sudo systemctl start mongod.service
+Reference: https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-20-04
 
 
 Docker Setup
