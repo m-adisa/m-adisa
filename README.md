@@ -19,7 +19,7 @@
 &#62; ./send_me_an_email
 [iconmoa@gmail.com](mailto:iconmoa@gmail.com)
 &#62; ./connect_on_linkedin
-[linkedin.com/in/michael](https://www.linkedin.com/in/michael-adisa-532573164/)
+[linkedin.com/in/michael](https://www.linkedin.com/in/mike-adisa/)
 &#62; ./connect_on_twitter
 [https://twitter.com/michael](https://twitter.com/themich_ael)
 </pre></big>
