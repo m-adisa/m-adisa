@@ -158,11 +158,13 @@ PostgreSQL SETUP
 
 Redis SETUP
 ============
-1) sudo apt update
-2) sudo apt install redis-server
-3) sudo vim /etc/redis/redis.conf (supervised is set to `no` by default. Change it to `systemd`.
-4) sudo systemctl restart redis.service
-Reference: https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-20-04
+1) curl -fsSL https://packages.redis.io/gpg | sudo gpg --dearmor -o /usr/share/keyrings/redis-archive-keyring.gpg
+2) echo "deb [signed-by=/usr/share/keyrings/redis-archive-keyring.gpg] https://packages.redis.io/deb $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/redis.list
+3) sudo apt update
+4) sudo apt install redis
+5) sudo vim /etc/redis/redis.conf (supervised is set to `no` by default. Change it to `systemd`.
+6) sudo systemctl restart redis.service
+Reference: https://redis.io/docs/getting-started/installation/install-redis-on-linux/
 
 
 MongoDB SETUP
