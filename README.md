@@ -7,11 +7,14 @@
 </p>
 
 ### 📖 Getting Started
-- 🔭 I **[graduated from the Udacity/ALX-T Cloud Developer Nanodegree](https://confirm.udacity.com/KYKQRNHE)**
-- 🌱 I’m currently working on **finishing up the ALX Software Engineering Programme**
+- 🌱 I graduated from the **ALX Software Engineering [Programme] (https://www.alxafrica.com/software-engineering/)**
+- 🔭 I completed the **Udacity/ALX-T Cloud Developer [Nanodegree](https://confirm.udacity.com/KYKQRNHE)**
+- 🌱 I am currently working on getting my **Azure System Administrator Certification**.
 - 💬 Ask me anything about **C, Python, TypeScript, NodeJS, System Administration and Microservices**
 - ⚡ Fun fact: **I enjoy writing. You can read up my articles on my [blog](https://sage.hashnode.dev/).**
 
+### Portfolio Projects
+- [Project Pepper](https://github.com/Codart-7/my-project-pepper)
 
 ### ✍️ Usage
 
