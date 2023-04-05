@@ -7,7 +7,7 @@
 </p>
 
 ### 📖 Getting Started
-- 🌱 I graduated from the **ALX Software Engineering [Programme] (https://www.alxafrica.com/software-engineering/)**
+- 🌱 I graduated from the **ALX Software Engineering [Programme](https://www.alxafrica.com/software-engineering/)**
 - 🔭 I completed the **Udacity/ALX-T Cloud Developer [Nanodegree](https://confirm.udacity.com/KYKQRNHE)**
 - 🌱 I am currently working on getting my **Azure System Administrator Certification**.
 - 💬 Ask me anything about **C, Python, TypeScript, NodeJS, System Administration and Microservices**
