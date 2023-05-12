@@ -14,10 +14,7 @@
 - ⚡ Fun fact: **I enjoy writing. You can read up my articles on my [blog](https://sage.hashnode.dev/).**
 
 ## Portfolio Projects
-- [Project Pepper](https://github.com/Codart-7/my-project-pepper)
-Pepper is an inventory management system API designed to help the user track and manage inventory levels, and related activities.
-
-It includes a comprehensive Role-Based Access Control (RBAC) to improve security by limiting access to sensitive data and system functionality only to authorized users.
+- [Project Pepper](https://github.com/Codart-7/) is an inventory management system API designed to help the user track and manage inventory levels, and related activities. It includes a comprehensive Role-Based Access Control (RBAC) to improve security by limiting access to sensitive data and system functionality only to authorized users.
 
 ## ✍️ Usage
 
