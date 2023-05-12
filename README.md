@@ -1,5 +1,5 @@
 <h1 align="left">Hi there 👋, I'm Michael Adisa</h1>
-<h3 align="left">A Software Engineer from Nigeria</h3>
+<h2 align="left">A Software Engineer from Nigeria</h3>
 <img align= "right" alt="Coding" width="400" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/media/320984a9ca58b3c73274c9259ecf6de8.gif">
 
 <p>
