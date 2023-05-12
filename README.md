@@ -15,6 +15,7 @@
 
 ## Portfolio Projects
 - [Project Pepper](https://github.com/Codart-7/) is an inventory management system API designed to help the user track and manage inventory levels, and related activities. It includes a comprehensive Role-Based Access Control (RBAC) to improve security by limiting access to sensitive data and system functionality only to authorized users.
+- [Loop Project](https://github.com/Codart-7/loop-project) is an API to track the status of restaurants and provide a report of their activity.
 
 ## ✍️ Usage
 
