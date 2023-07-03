@@ -1,8 +1,7 @@
-#THIS SETUP WILL CONTINUALLY BE UPDATED#
-## BASIC ASSUMPTION: Operating System is Ubuntu 20.04 LTS
+#### THIS SETUP WILL CONTINUALLY BE UPDATED
+#### BASIC ASSUMPTION: Operating System is Ubuntu 20.04 LTS
 
-System Admin Setup
-===================
+## System Admin Setup
 1) Install git -   sudo apt install git
 2) Install Emacs - sudo apt install emacs
 3) Install ShellCheck - sudo apt install shellcheck
@@ -19,8 +18,7 @@ Resource
 ssh-keygen guide: https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04
 
 
-C Setup
-=======
+## C Setup
 1) Install basic setup -   sudo apt install build-essential
 2) Install Betty
 	a) Clone the repo to your local machine - git clone https://github.com/holbertonschool/Betty.git
@@ -54,8 +52,7 @@ C Setup
 3) Setup emacs to use Betty Linter for C - https://sage.hashnode.dev/using-holbertons-betty-linter-for-c-on-emacs
 
 
-Python Setup
-=============
+## Python Setup
 1) Install Python -	 sudo apt install python3 (this installs Python3. This is the choice)  
 2) Install Pycodestyle - sudo apt install pycodestyle
 3) Install pip -         sudo apt install pip
@@ -74,8 +71,7 @@ Python Setup
 
 
 
-JavaScript/TypeScript Setup
-============================
+## JavaScript/TypeScript Setup
 1) Install node version manager
 	- curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 	- source ~/.bashrc
@@ -111,8 +107,7 @@ JavaScript/TypeScript Setup
 learning resource: John Smilga's repo ( git clone https://github.com/john-smilga/node-express-course.git )
 
 
-MySQL Setup
-============
+## MySQL Setup
 1) sudo apt update
 2) sudo apt install mysql-server
 3) sudo systemctl start mysql.service
@@ -133,13 +128,13 @@ After selecting your password, From there, you can press Y and then ENTER to acc
 13) mysql> GRANT ALL PRIVILEGES ON *.* TO 'codart'@'localhost';
 16) mysql> FLUSH PRIVILEGES;
 17) mysql> exit
-Test
-====
+
+### Test
 Login-  mysql -u <username> -p
 It will prompt you for your password.
 Then exit-  mysql> exit
 
-Check- sudo mysqladmin -p -u <username> version
+### Check- sudo mysqladmin -p -u <username> version
 
 Reference -   https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04
 Install workbench:   sudo snap install mysql-workbench-community
@@ -149,15 +144,13 @@ Again, READ ALL THIS GUIDE AND THE REFERENCES CAREFULLY BEFORE DOING ANYTHING
 
 
 
-PostgreSQL SETUP
-=================
+## PostgreSQL SETUP
 1) sudo apt install postgresql-common
 2) sudo sh /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
 3) sudo apt install postgresql-14
 
 
-Redis SETUP
-============
+## Redis SETUP
 1) curl -fsSL https://packages.redis.io/gpg | sudo gpg --dearmor -o /usr/share/keyrings/redis-archive-keyring.gpg
 2) echo "deb [signed-by=/usr/share/keyrings/redis-archive-keyring.gpg] https://packages.redis.io/deb $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/redis.list
 3) sudo apt update
@@ -167,8 +160,7 @@ Redis SETUP
 Reference: https://redis.io/docs/getting-started/installation/install-redis-on-linux/
 
 
-MongoDB SETUP
-==============
+## MongoDB SETUP
 1) curl -fsSL https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
 2) echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
 3) sudo apt update
@@ -177,8 +169,7 @@ MongoDB SETUP
 Reference: https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-20-04
 
 
-Docker Setup
-=============
+## Docker Setup
 Install Reference:
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
 https://docs.docker.com/desktop/install/ubuntu/
@@ -196,8 +187,7 @@ Important Docker Commands
 
 
 
-Minikube Setup
-===============
+## Minikube Setup
 Prerequisite: Fully functional Docker installation
 Installation:
 	- curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
@@ -207,14 +197,13 @@ Reference: https://minikube.sigs.k8s.io/docs/start/
 
 
 
-Amazon Web Services
-====================
-A -- INSTALL AWS CLI TOOL
+## Amazon Web Services
+### INSTALL AWS CLI TOOL
 1) curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 2) unzip awscliv2.zip
 3) sudo ./aws/install
 
-Configuration and setup
+#### Configuration and setup
 1) setup:  aws configure
 NOTE:
 	a) prefered output format is json
@@ -233,13 +222,13 @@ NOTE:
 	aws iam list-users --profile <profile-name>
 
 NB: Updating specific variable configuration is done via the following syntax
-# Syntax
-# aws configure set <varname> <value> [--profile profile-name]
-# For example
+Syntax
+aws configure set <varname> <value> [--profile profile-name]
+For example
 aws configure set default.region us-east-2
 aws configure set default.aws_session_token "Your-value"
 
-B -- INSTALL AWS EB CLI TOOL
+### INSTALL AWS EB CLI TOOL
 Ensure you have the following installed - git, python3 and virtualenv (instructions to get these were described)
 1) Clone the repo - git clone https://github.com/aws/aws-elastic-beanstalk-cli-setup.git
 2) Install/Upgrade - python3 ./aws-elastic-beanstalk-cli-setup/scripts/ebcli_installer.py
@@ -254,12 +243,11 @@ Ensure you have the following installed - git, python3 and virtualenv (instructi
 Reference - https://github.com/aws/aws-elastic-beanstalk-cli-setup
 	    https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install-linux.html
 
-# Installation for AWS SDK for JavaScript is referenced in the JavaScript/TypeScript section
+#### Installation for AWS SDK for JavaScript is referenced in the JavaScript/TypeScript section
 Reference - https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/installing-jssdk.html
 
 
-Puppet Setup
-=============
+## Puppet Setup
 Install Pupppet:
 	- sudo apt-get install -y ruby
 	- sudo apt-get install -y ruby-augeas
@@ -272,8 +260,7 @@ Install puppet-lint: sudo gem install puppet-lint
 Emacs puppet-mode: M-x package-install RET puppet-mode
 
 
-Fabric
-=======
+## Fabric
 [The below is to be saved in a file and executed]
 #!/usr/bin/env bash
 #Install nginx on a server and start it
@@ -296,8 +283,7 @@ sudo pip3 install PyNaCl==1.3.0
 sudo pip3 install Fabric3==1.14.post1
 
 
-Momento Setup
-==============
+## Momento Setup
 1) Create account:
 	momento account signup aws \
 	--email YOUR_EMAIL \
@@ -305,8 +291,7 @@ Momento Setup
 2) Setup: momento configure
 
 
-Other Resources
-================
+## Other Resources
 - Install Postbird :- sudo snap install postbird
 - Install Postman :- sudo snap install postman
 - Use Sentry for bug reporting :- https://sentry.io/
@@ -316,7 +301,6 @@ Other Resources
 - Use Balsamiq for ui mockups - https://balsamiq.com/
 
 
-Dev Resources
-=============
+## Dev Resources
 a) https://developer.mozilla.org/en-US/
 b) https://www.digitalocean.com/community/tutorials
