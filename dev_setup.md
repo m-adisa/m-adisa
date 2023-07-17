@@ -216,9 +216,9 @@ NOTE:
 	export AWS_CONFIG_FILE=~/.aws/config
 	export AWS_SHARED_CREDENTIALS_FILE=~/.aws/credentials
 4) Testing setup
-	# If you've just one profile set locally
+	##### If you've just one profile set locally
 	aws iam list-users
-	# If you've multiple profiles set locally
+	##### If you've multiple profiles set locally
 	aws iam list-users --profile <profile-name>
 
 NB: Updating specific variable configuration is done via the following syntax
@@ -245,6 +245,11 @@ Reference - https://github.com/aws/aws-elastic-beanstalk-cli-setup
 
 #### Installation for AWS SDK for JavaScript is referenced in the JavaScript/TypeScript section
 Reference - https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/installing-jssdk.html
+
+
+## Kafka Setup
+...
+
 
 
 ## Puppet Setup
