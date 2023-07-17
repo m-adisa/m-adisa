@@ -20,11 +20,12 @@ ssh-keygen guide: https://www.digitalocean.com/community/tutorials/how-to-set-up
 
 ## C Setup
 1) Install basic setup -   sudo apt install build-essential
-2) Install Betty
-	a) Clone the repo to your local machine - git clone https://github.com/holbertonschool/Betty.git
-	b) cd into the Betty directory
-	c) Install the linter -   sudo ./install.sh
-	d) emacs or vim a new file called betty, and copy the script below:
+2) Install Betty:
+   	- Clone the repo to your local machine - git clone https://github.com/holbertonschool/Betty.git
+   	- cd into the Betty directory
+   	- Install the linter -   sudo ./install.sh
+   	- emacs or vim a new file called betty, and copy the script below:
+   	  	```
 		#!/bin/bash
 		# Simply a wrapper script to keep you from having to use betty-style
 		# and betty-doc separately on every item.
@@ -49,7 +50,7 @@ ssh-keygen guide: https://www.digitalocean.com/community/tutorials/how-to-set-up
 	f) Move the betty file into /bin/ directory or somewhere else in your $PATH with sudo mv betty /bin/
 
 
-3) Setup emacs to use Betty Linter for C - https://sage.hashnode.dev/using-holbertons-betty-linter-for-c-on-emacs
+4) Setup emacs to use Betty Linter for C - https://sage.hashnode.dev/using-holbertons-betty-linter-for-c-on-emacs
 
 
 ## Python Setup
@@ -247,8 +248,67 @@ Reference - https://github.com/aws/aws-elastic-beanstalk-cli-setup
 Reference - https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/installing-jssdk.html
 
 
-## Kafka Setup
-...
+## Kafka
+### Installation
+1) sudo adduser kafka
+2) sudo adduser kafka sudo
+3) su -l kafka
+4) mkdir ~/Downloads
+5) curl "https://downloads.apache.org/kafka/3.5.0/kafka_2.12-3.5.0.tgz" -o ~/Downloads/kafka.tgz
+6) mkdir ~/kafka && cd ~/kafka
+7) tar -xvzf ~/Downloads/kafka.tgz --strip 1
+
+### Configuration
+1) vim ~/kafka/config/server.properties
+   	- Change the value of `log.dirs` to `/home/kafka/logs`
+   	- Append the following to the file `delete.topic.enable = true`
+2) sudo vim /etc/systemd/system/zookeeper.service
+   	- Enter the following unit definition into the file:
+   		```
+   	  	[Unit]
+		Requires=network.target remote-fs.target
+		After=network.target remote-fs.target
+
+		[Service]
+		Type=simple
+		User=kafka
+		ExecStart=/home/kafka/kafka/bin/zookeeper-server-start.sh /home/kafka/kafka/config/zookeeper.properties
+		ExecStop=/home/kafka/kafka/bin/zookeeper-server-stop.sh
+		Restart=on-abnormal
+
+		[Install]
+		WantedBy=multi-user.target
+
+3) sudo vim /etc/systemd/system/kafka.service
+   	- Enter the following unit definition into the file:
+   	  	```
+   	  	[Unit]
+		Requires=zookeeper.service
+		After=zookeeper.service
+
+		[Service]
+		Type=simple
+		User=kafka
+		ExecStart=/bin/sh -c '/home/kafka/kafka/bin/kafka-server-start.sh /home/kafka/kafka/config/server.properties > /home/kafka/kafka/kafka.log 2>&1'
+		ExecStop=/home/kafka/kafka/bin/kafka-server-stop.sh
+		Restart=on-abnormal
+
+		[Install]
+		WantedBy=multi-user.target
+
+4) sudo systemctl start kafka
+5) sudo systemctl status kafka
+6) sudo systemctl enable zookeeper
+7) sudo systemctl enable kafka
+
+### Hardening
+1) sudo deluser kafka sudo
+2) sudo passwd kafka -l
+
+### Install kafkaT
+1) sudo apt install ruby ruby-dev build-essential
+
+Reference - https://www.digitalocean.com/community/tutorials/how-to-install-apache-kafka-on-ubuntu-20-04
 
 
 
