@@ -305,9 +305,6 @@ Reference - https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/in
 1) sudo deluser kafka sudo
 2) sudo passwd kafka -l
 
-### Install kafkaT
-1) sudo apt install ruby ruby-dev build-essential
-
 Reference - https://www.digitalocean.com/community/tutorials/how-to-install-apache-kafka-on-ubuntu-20-04
 
 
