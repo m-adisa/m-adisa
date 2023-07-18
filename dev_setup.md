@@ -78,15 +78,15 @@ ssh-keygen guide: https://www.digitalocean.com/community/tutorials/how-to-set-up
 	- source ~/.bashrc
 2) Install a version of node:
 	- nvm install v16.17.0  (Node version manager can do a lot more things. Google its uses.)
-3) package.json inside every main project directory
+3) package.json inside every main project directory:
 	a) npm init (step by step, press enter to skip. OR
 	b) npm init -y (everything default)
-4) for npm
+4) for npm:
 	a) local dependency - npm i <packageName>  (inside every main project directory, after npm init)
 	b) global dependency - npm install -g <packageName>  (Using <sudo> command with npm is not recommended. Try not to use global dependency)
 	c) dev dependencies - npm install <packageName> --save-dev
 5) create a .gitignore file inside every main project directory that contains </node_modules> to not push the node_modules folder
-6) Packages to install
+6) Packages to install:
 	a) local dependency
 		express -    npm install express --save
 		ionic   -    npm install -g @ionic/cli
@@ -310,20 +310,22 @@ Reference - https://www.digitalocean.com/community/tutorials/how-to-install-apac
 
 
 ## Puppet Setup
-Install Pupppet:
-	- sudo apt-get install -y ruby
-	- sudo apt-get install -y ruby-augeas
-	- sudo apt-get install -y ruby-shadow
-	- sudo apt-get install -y puppet
-	- sudo apt -y install puppet-module-puppetlabs-stdlib
+### Install Pupppet:
+- sudo apt-get install -y ruby
+- sudo apt-get install -y ruby-augeas
+- sudo apt-get install -y ruby-shadow
+- sudo apt-get install -y puppet
+- sudo apt -y install puppet-module-puppetlabs-stdlib
 	
-Install puppet-lint: sudo gem install puppet-lint
+### Install puppet-lint:
+sudo gem install puppet-lint
 
 Emacs puppet-mode: M-x package-install RET puppet-mode
 
 
 ## Fabric
 [The below is to be saved in a file and executed]
+```
 #!/usr/bin/env bash
 #Install nginx on a server and start it
 sudo apt-get update -y
@@ -343,14 +345,16 @@ sudo pip3 install cryptography==2.8
 sudo pip3 install bcrypt==3.1.7
 sudo pip3 install PyNaCl==1.3.0
 sudo pip3 install Fabric3==1.14.post1
+```
 
 
 ## Momento Setup
 1) Create account:
+   	```
 	momento account signup aws \
 	--email YOUR_EMAIL \
 	--region us-east-1
-2) Setup: momento configure
+3) Setup: momento configure
 
 
 ## Other Resources
