@@ -7,17 +7,17 @@
 </p>
 
 ## 📖 About Me
-- 🌱 I graduated from the **ALX Software Engineering [Programme](https://www.alxafrica.com/software-engineering/)**
+- 🌱 I graduated from the **ALX Software Engineering [Programme](https://drive.google.com/file/d/1fOgW0enOQWnGOKYjXtor3xxf2op6Lzf7/view?usp=sharing)**
 - 🔭 I completed the **Udacity/ALX-T Cloud Developer [Nanodegree](https://confirm.udacity.com/KYKQRNHE)**
 - 🌱 I am currently working on getting my **Azure System Administrator Certification**.
-- 💬 Ask me anything about **C, Python, TypeScript, NodeJS, System Administration and Microservices**
+- 💬 Ask me anything about **C, Python, TypeScript, NodeJS, FastAPI, System Administration and Microservices**
 - ⚡ Fun fact: **I enjoy writing. You can read up my articles on my [blog](https://sage.hashnode.dev/).**
 
 ## ✍️ Usage
 
 <big><pre>
 &#62; ./send_me_an_email
-[michael.o.adisa@gmail.com](mailto:iconmoa@gmail.com)
+[michael.o.adisa@gmail.com](mailto:michael.o.adisa@gmail.com)
 &#62; ./connect_on_linkedin
 [linkedin.com/in/michael](https://www.linkedin.com/in/mike-adisa/)
 &#62; ./connect_on_twitter
