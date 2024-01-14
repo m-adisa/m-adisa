@@ -17,11 +17,9 @@
 
 <big><pre>
 &#62; ./send_me_an_email
-[michael.o.adisa@gmail.com](mailto:michael.o.adisa@gmail.com)
+[My emai](mailto:michael.o.adisa@gmail.com)
 &#62; ./connect_on_linkedin
-[linkedin.com/in/michael](https://www.linkedin.com/in/mike-adisa/)
-&#62; ./connect_on_twitter
-[https://twitter.com/michael](https://twitter.com/themich_ael)
+[My LinkedIn](https://www.linkedin.com/in/mike-adisa/)
 </pre></big>
 
 
