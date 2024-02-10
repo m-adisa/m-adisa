@@ -1,4 +1,4 @@
-<h1 align="left">Hi there 👋, I'm Michael Adisa</h1>
+<h1 align="left">Hi there, I'm Michael Adisa</h1>
 <h2 align="left">A Software Engineer from Nigeria</h2>
 <img align= "right" alt="Coding" width="400" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/media/320984a9ca58b3c73274c9259ecf6de8.gif">
 
@@ -7,11 +7,9 @@
 </p>
 
 ## 📖 About Me
-- 🌱 I graduated from the **ALX Software Engineering [Programme](https://drive.google.com/file/d/1fOgW0enOQWnGOKYjXtor3xxf2op6Lzf7/view?usp=sharing)**
-- 🔭 I completed the **Udacity/ALX-T Cloud Developer [Nanodegree](https://confirm.udacity.com/KYKQRNHE)**
-- 🌱 I am currently working on getting my **Azure System Administrator Certification**.
-- 💬 Ask me anything about **C, Python, TypeScript, NodeJS, FastAPI, System Administration and Microservices**
-- ⚡ Fun fact: **I enjoy writing. You can read up my articles on my [blog](https://sage.hashnode.dev/).**
+- ⚡ I am **Co-founder** and **CTO** at **[Checkit Inc](https://checkitprocure.com/)**.
+- 🌱 I graduated from the **ALX Software Engineering [Programme](https://drive.google.com/file/d/1fOgW0enOQWnGOKYjXtor3xxf2op6Lzf7/view?usp=sharing)**.
+- 🌱 I enjoy writing. You can read up my articles on my **[blog](https://sage.hashnode.dev/)**.
 
 ## ✍️ Usage
 
