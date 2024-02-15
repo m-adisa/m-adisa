@@ -13,6 +13,7 @@
 9) Install Nginx:  sudo apt install nginx
 10) Install htop: sudo apt-get install htop -y
 11) Install inxi: sudo apt install inxi
+    
 
 Resource
 ssh-keygen guide: https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04
@@ -79,33 +80,40 @@ ssh-keygen guide: https://www.digitalocean.com/community/tutorials/how-to-set-up
 2) Install a version of node:
 	- nvm install v16.17.0  (Node version manager can do a lot more things. Google its uses.)
 3) package.json inside every main project directory:
-	a) npm init (step by step, press enter to skip. OR
-	b) npm init -y (everything default)
+   	- npm init (step by step, press enter to skip. OR
+	- npm init -y (everything default)
 4) for npm:
-	a) local dependency - npm i <packageName>  (inside every main project directory, after npm init)
-	b) global dependency - npm install -g <packageName>  (Using <sudo> command with npm is not recommended. Try not to use global dependency)
-	c) dev dependencies - npm install <packageName> --save-dev
+   	- local dependency - npm i <packageName>  (inside every main project directory, after npm init)
+	- global dependency - npm install -g <packageName>  (Using <sudo> command with npm is not recommended. Try not to use global dependency)
+	- dev dependencies - npm install <packageName> --save-dev
 5) create a .gitignore file inside every main project directory that contains </node_modules> to not push the node_modules folder
 6) Packages to install:
-	a) local dependency
-		express -    npm install express --save
-		ionic   -    npm install -g @ionic/cli
-		sequelize -  npm install sequelize
-		AWS SDK -    npm install aws-sdk
-		Dotenv -     npm install dotenv --save
-		bcrypt -     npm install bcrypt
-		serverless-  npm install -g serverless
-	b) dev dependency
-		nodemon -  npm install nodemon --save-dev
-		bcrypt -   npm install @types/bcrypt --save-dev  **
-		mocha -    npm install mocha --save-dev
-		chai -     npm install chai --save-dev
-		typescript -   npm install typescript --save-dev
-			       npm install ts-node --save-dev
-			       npm install @types/node --save-dev
+   	- local dependency:
+		- express:    npm install express --save
+		- ionic:      npm install -g @ionic/cli
+		- sequelize:  npm install sequelize
+		- AWS SDK:    npm install aws-sdk
+		- Dotenv:     npm install dotenv --save
+		- bcrypt:     npm install bcrypt
+		- serverless: npm install -g serverless
+	- dev dependency:
+		- nodemon:  npm install nodemon --save-dev
+		- bcrypt:   npm install @types/bcrypt --save-dev  **
+		- mocha:    npm install mocha --save-dev
+		- chai:     npm install chai --save-dev
+		- typescript:
+			- npm install typescript --save-dev
+			- npm install ts-node --save-dev
+			- npm install @types/node --save-dev
 			       
 			      
 learning resource: John Smilga's repo ( git clone https://github.com/john-smilga/node-express-course.git )
+
+
+## Deno
+Installation: curl -fsSL https://deno.land/install.sh | sh
+
+learning resource: https://docs.deno.com/runtime/manual/
 
 
 ## MySQL Setup
