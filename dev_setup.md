@@ -111,7 +111,7 @@ learning resource: John Smilga's repo ( git clone https://github.com/john-smilga
 
 
 ## Deno
-Installation: curl -fsSL https://deno.land/install.sh | sh
+Installation: `curl -fsSL https://deno.land/install.sh | sh`
 
 learning resource: https://docs.deno.com/runtime/manual/
 
