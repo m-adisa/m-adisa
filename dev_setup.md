@@ -160,22 +160,21 @@ ND: version 14 is now outdated
 3) sudo apt install postgresql-14
 
 ### Setup
--- Switch to default superuser "postgres",
--- run utility "createuser" to create a superuser same name as current login.
--- "$USER" is an environment variable denoting the current login user.
-$ sudo -u postgres createuser --superuser $USER
+	- Switch to default superuser "postgres",
+	- run utility "createuser" to create a superuser same name as current login.
+	- "$USER" is an environment variable denoting the current login user.
+		- sudo -u postgres createuser --superuser $USER
 
--- Create the default database which shall be the same as the username.
-$ sudo -u postgres createdb $USER
+	- Create the default database which shall be the same as the username.
+		- sudo -u postgres createdb $USER
 
--- Login in to server via "psql" with user "postgres"
-sudo -u postgres psql
-......
- 
--- Change password for current logged in OS user
-postgres=# \password <user>
-Enter new password: xxxx
-Enter it again: xxxx
+	- Login in to server via "psql" with user "postgres"
+		- sudo -u postgres psql
+
+	- Change password for current logged in OS user
+		postgres=# \password "user"
+		Enter new password: xxxx
+		Enter it again: xxxx
 
 Reference: https://www3.ntu.edu.sg/home/ehchua/programming/sql/PostgreSQL_GetStarted.html
 
