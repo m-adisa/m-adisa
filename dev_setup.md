@@ -154,9 +154,16 @@ Again, READ ALL THIS GUIDE AND THE REFERENCES CAREFULLY BEFORE DOING ANYTHING
 
 
 ## PostgreSQL SETUP
+ND: version 14 is now outdated
 1) sudo apt install postgresql-common
 2) sudo sh /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
 3) sudo apt install postgresql-14
+
+### Create super user
+1) sudo -u postgres createuser --superuser $USER
+2) sudo -u postgres createdb $USER
+
+Reference: https://www3.ntu.edu.sg/home/ehchua/programming/sql/PostgreSQL_GetStarted.html
 
 
 ## Redis SETUP
