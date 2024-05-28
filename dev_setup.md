@@ -116,7 +116,7 @@ Installation: `curl -fsSL https://deno.land/install.sh | sh`
 learning resource: https://docs.deno.com/runtime/manual/
 
 
-## MySQL Setup
+## MySQL
 1) sudo apt update
 2) sudo apt install mysql-server
 3) sudo systemctl start mysql.service
@@ -153,15 +153,29 @@ Again, READ ALL THIS GUIDE AND THE REFERENCES CAREFULLY BEFORE DOING ANYTHING
 
 
 
-## PostgreSQL SETUP
+## PostgreSQL
 ND: version 14 is now outdated
 1) sudo apt install postgresql-common
 2) sudo sh /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
 3) sudo apt install postgresql-14
 
-### Create super user
-1) sudo -u postgres createuser --superuser $USER
-2) sudo -u postgres createdb $USER
+### Setup
+-- Switch to default superuser "postgres",
+-- run utility "createuser" to create a superuser same name as current login.
+-- "$USER" is an environment variable denoting the current login user.
+$ sudo -u postgres createuser --superuser $USER
+
+-- Create the default database which shall be the same as the username.
+$ sudo -u postgres createdb $USER
+
+-- Login in to server via "psql" with user "postgres"
+sudo -u postgres psql
+......
+ 
+-- Change password for current logged in OS user
+postgres=# \password <user>
+Enter new password: xxxx
+Enter it again: xxxx
 
 Reference: https://www3.ntu.edu.sg/home/ehchua/programming/sql/PostgreSQL_GetStarted.html
 
